@@ -1,0 +1,57 @@
+﻿生成启动时间为 2018/6/26 星期二 下午 10:32:56。
+     1>项目“D:\github\Kehua-player\Client\MTS.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“D:\github\Kehua-player\Client\Kehua.unsuccessfulbuild”执行 Touch 任务。
+       Midl:
+         所有输出均为最新。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug\MyTest.pch" /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /FR"D:\github\Kehua-player\Client\\" /Gd /TP /analyze- /errorReport:prompt RelayDlg.cpp
+         RelayDlg.cpp
+     1>d:\github\kehua-player\client\relaydlg.cpp(523): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\github\kehua-player\client\relaydlg.cpp(530): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\github\kehua-player\client\relaydlg.cpp(574): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\github\kehua-player\client\relaydlg.cpp(581): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\github\kehua-player\client\relaydlg.cpp(622): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\github\kehua-player\client\relaydlg.cpp(629): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\github\kehua-player\client\relaydlg.cpp(663): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\github\kehua-player\client\relaydlg.cpp(693): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\github\kehua-player\client\relaydlg.cpp(723): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\github\kehua-player\client\relaydlg.cpp(753): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\github\kehua-player\client\relaydlg.cpp(787): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\github\kehua-player\client\relaydlg.cpp(820): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\github\kehua-player\client\relaydlg.cpp(880): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\github\kehua-player\client\relaydlg.cpp(887): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\github\kehua-player\client\relaydlg.cpp(921): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\github\kehua-player\client\relaydlg.cpp(950): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+       ResourceCompile:
+         所有输出均为最新。
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\github\Kehua-player\Client\Kehua.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"D:\github\Kehua-player\Client\Kehua.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\github\Kehua-player\Client\Kehua.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\github\Kehua-player\Client\Kehua.lib" /MACHINE:X86 "D:\github\Kehua-player\Client\MyTest.res"
+         "D:\github\Kehua-player\Client\Kehua.exe.embed.manifest.res"
+         .\Debug\DallasDlg.obj
+         .\Debug\DlgProxy.obj
+         .\Debug\EepromDlg.obj
+         .\Debug\mscomm.obj
+         .\Debug\MyTest.obj
+         .\Debug\MyTestDlg.obj
+         .\Debug\RelayDlg.obj
+         .\Debug\StdAfx.obj
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"D:\github\Kehua-player\Client\Kehua.exe.embed.manifest" /manifest "D:\github\Kehua-player\Client\Kehua.exe.intermediate.manifest" "C:\Program Files\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         MTS.vcxproj -> D:\github\Kehua-player\Client\Kehua.exe
+       BscMake:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o".\Debug\MyTest.bsc" "D:\github\Kehua-player\Client\DallasDlg.sbr" "D:\github\Kehua-player\Client\DlgProxy.sbr" "D:\github\Kehua-player\Client\EepromDlg.sbr" "D:\github\Kehua-player\Client\mscomm.sbr" "D:\github\Kehua-player\Client\MyTest.sbr" "D:\github\Kehua-player\Client\MyTestDlg.sbr" "D:\github\Kehua-player\Client\RelayDlg.sbr" "D:\github\Kehua-player\Client\StdAfx.sbr"
+       FinalizeBuildStatus:
+         正在删除文件“D:\github\Kehua-player\Client\Kehua.unsuccessfulbuild”。
+         正在对“D:\github\Kehua-player\Client\Kehua.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\github\Kehua-player\Client\MTS.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.68

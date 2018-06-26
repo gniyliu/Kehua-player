@@ -1,0 +1,3 @@
+---- OPERATE_DALLAS_READ_ALL Matches (2 in 2 files) ----
+DallasDlg.cpp:			DallasCommSet.sendBytes[1] = OPERATE_DALLAS_READ_ALL;
+OperateConst.h (E:\Work\DER_V1\MyTest):#define OPERATE_DALLAS_READ_ALL		0x02

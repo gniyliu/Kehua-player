@@ -1,0 +1,71 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MyTest - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP325.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/MyTest.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\esoft\深圳同为旭业舒总\Huawei UPS\UPS_Client\DallasDlg.cpp"
+"E:\esoft\深圳同为旭业舒总\Huawei UPS\UPS_Client\DlgProxy.cpp"
+"E:\esoft\深圳同为旭业舒总\Huawei UPS\UPS_Client\EepromDlg.cpp"
+"E:\esoft\深圳同为旭业舒总\Huawei UPS\UPS_Client\mscomm.cpp"
+"E:\esoft\深圳同为旭业舒总\Huawei UPS\UPS_Client\MyTest.cpp"
+"E:\esoft\深圳同为旭业舒总\Huawei UPS\UPS_Client\MyTestDlg.cpp"
+"E:\esoft\深圳同为旭业舒总\Huawei UPS\UPS_Client\RelayDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP325.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP326.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/MyTest.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\esoft\深圳同为旭业舒总\Huawei UPS\UPS_Client\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP326.tmp" 
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+DallasDlg.cpp
+DlgProxy.cpp
+EepromDlg.cpp
+mscomm.cpp
+MyTest.cpp
+MyTestDlg.cpp
+RelayDlg.cpp
+E:\esoft\深圳同为旭业舒总\Huawei UPS\UPS_Client\RelayDlg.cpp(287) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+E:\esoft\深圳同为旭业舒总\Huawei UPS\UPS_Client\RelayDlg.cpp(316) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+E:\esoft\深圳同为旭业舒总\Huawei UPS\UPS_Client\RelayDlg.cpp(343) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+E:\esoft\深圳同为旭业舒总\Huawei UPS\UPS_Client\RelayDlg.cpp(370) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+E:\esoft\深圳同为旭业舒总\Huawei UPS\UPS_Client\RelayDlg.cpp(397) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+E:\esoft\深圳同为旭业舒总\Huawei UPS\UPS_Client\RelayDlg.cpp(424) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+Generating Code...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP327.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/MyTest.pdb" /machine:I386 /out:"MyTest.exe" 
+".\Release\DallasDlg.obj"
+".\Release\DlgProxy.obj"
+".\Release\EepromDlg.obj"
+".\Release\mscomm.obj"
+".\Release\MyTest.obj"
+".\Release\MyTestDlg.obj"
+".\Release\RelayDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\MyTest.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP327.tmp"
+<h3>Output Window</h3>
+Linking...
+Creating command line "bscmake.exe /nologo /o"Release/MyTest.bsc"  ".\Release\StdAfx.sbr" ".\Release\DallasDlg.sbr" ".\Release\DlgProxy.sbr" ".\Release\EepromDlg.sbr" ".\Release\mscomm.sbr" ".\Release\MyTest.sbr" ".\Release\MyTestDlg.sbr" ".\Release\RelayDlg.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MyTest.exe - 0 error(s), 6 warning(s)
+</pre>
+</body>
+</html>

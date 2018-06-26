@@ -1,0 +1,75 @@
+#ifndef _OPERATE_CONST__H_
+#define _OPERATE_CONST__H_
+
+#define MODULE_DALLAS_DE_1		0x00
+#define MODULE_DALLAS_DE_2		0x01
+#define MODULE_DALLAS_DE_3		0x02
+#define MODULE_DALLAS_DE_4		0x03
+#define MODULE_DALLAS_DE_5		0x04
+#define MODULE_DALLAS_DE_6		0x05
+#define MODULE_DALLAS_DE_7		0x06
+#define MODULE_DALLAS_DE_8		0x07
+#define MODULE_DALLAS_DE_9		0x08
+#define MODULE_DALLAS_DE_10	0x09
+#define MODULE_DALLAS_DE_11	0x0a
+#define MODULE_DALLAS_DE_12	0x0b
+#define MODULE_DALLAS_DE_13	0x0c
+#define MODULE_DALLAS_DE_14	0x0d
+#define MODULE_DALLAS_DE_15	0x0e
+#define MODULE_DALLAS_DE_16	0x0f
+
+#define MODULE_DALLAS_DS_1		0x30
+#define MODULE_DALLAS_DS_2		0x31
+#define MODULE_DALLAS_DS_3		0x32
+#define MODULE_DALLAS_DS_4		0x33
+#define MODULE_DALLAS_DS_5		0x34
+#define MODULE_DALLAS_DS_6		0x35
+#define MODULE_DALLAS_DS_7		0x36
+#define MODULE_DALLAS_DS_8		0x37
+#define MODULE_DALLAS_DS_9		0x38
+#define MODULE_DALLAS_DS_10	0x39        
+#define MODULE_DALLAS_DS_11	0x3a        
+#define MODULE_DALLAS_DS_12	0x3b        
+#define MODULE_DALLAS_DS_13	0x3c        
+#define MODULE_DALLAS_DS_14	0x3d        
+#define MODULE_DALLAS_DS_15	0x3e        
+#define MODULE_DALLAS_DS_16	0x3f
+
+#define MODULE_LC32_1	0x50
+#define MODULE_LC32_2	0x51
+
+#define MODULE_RELAY_1	0x70
+#define MODULE_RELAY_2	0x71
+#define MODULE_RELAY_3	0x72
+#define MODULE_RELAY_4	0x73
+#define MODULE_RELAY_5	0x74
+#define MODULE_RELAY_6	0x75
+#define MODULE_RELAY_7	0x76
+#define MODULE_RELAY_8	0x77
+#define MODULE_RELAY_9	0x78
+#define MODULE_RELAY_10	0x79
+#define MODULE_RELAY_11	0x7a
+
+#define DALLAS_READ		0x00
+#define DALLAS_WRITE	0x01
+
+
+____0____*	器件名  
+____1____*	操作参数1
+____2____*	操作参数2
+____3____*	操作参数3
+____4____*	器件参数1[如地址]
+____5____*	器件参数2[如地址]
+____6____*	器件参数3[如地址]
+____7____*	数据[0]
+____8____*	数据[1]
+____9____*	数据[2]
+____A____*	数据[3]
+____B____*	数据[4]
+____C____*	数据[5]
+____D____*	数据[6]
+____E____*	数据[7]
+____F____*	校验字节
+
+
+#endif /*	end definition _OPERATE_CONST__H_	*/

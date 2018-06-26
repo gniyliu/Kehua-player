@@ -1,0 +1,359 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MyTest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MyTest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MyTest"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MyTest 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MYTEST_DIALOG DIALOGEX 0, 0, 168, 123
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Kehua"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "DALLAS",IDC_SET_DALLAS,7,102,50,14,BS_FLAT | NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "EEPROM",IDC_SET_EEPROM,59,102,50,14,BS_FLAT | NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "开始演示",IDC_SET_RELAY,48,52,65,32,BS_CENTER | BS_FLAT
+    LTEXT           "串口选择",IDC_STATIC,28,7,49,8
+    LTEXT           "波特率",IDC_STATIC,7,25,28,8,NOT WS_VISIBLE
+    LTEXT           "数据位",IDC_STATIC,7,25,29,8,NOT WS_VISIBLE
+    LTEXT           "停止位",IDC_STATIC,7,25,25,8,NOT WS_VISIBLE
+    LTEXT           "校验",IDC_STATIC,7,25,35,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_PORT,89,7,47,61,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_BAUD,125,25,36,67,CBS_DROPDOWN | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DATABITS,125,43,36,57,CBS_DROPDOWN | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_STOPBITS,125,61,36,57,CBS_DROPDOWN | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PARITY,125,81,36,44,CBS_DROPDOWN | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "使用串口",IDC_CHECK_PORT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,59,32,48,10
+    PUSHBUTTON      "Open notepad",IDC_BUTTON1,111,102,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "注册",IDC_BUTTON2,57,90,50,14,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_DALLAS DIALOG 0, 0, 273, 202
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DALLAS"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_RECEIVED,11,109,251,81,ES_MULTILINE | ES_NUMBER | WS_VSCROLL
+    GROUPBOX        "数据接收区",IDC_STATIC,5,98,262,97
+    GROUPBOX        "命令发送区",IDC_STATIC,6,16,260,76
+    CONTROL         "ASCII",IDC_ASCII,"Button",BS_AUTORADIOBUTTON | WS_GROUP,65,5,33,10
+    CONTROL         "HEX",IDC_HEX,"Button",BS_AUTORADIOBUTTON,109,5,30,10
+    LTEXT           "显示方式",IDC_STATIC,21,5,33,8
+    PUSHBUTTON      "清空接收区",IDC_CLEAR_RECEIVED,150,5,45,10,BS_FLAT
+    PUSHBUTTON      "清空命令区",IDC_CLEAR_SEND,206,5,46,11,BS_FLAT
+    PUSHBUTTON      "发送",IDC_SEND,223,66,34,11,BS_FLAT
+    CONTROL         "",IDC_MSCOMM_DALLAS,
+                    "{648A5600-2C6E-101B-82B6-000000000014}",NOT WS_VISIBLE | WS_TABSTOP,252,2,19,19
+    CONTROL         "READ",IDC_RADIO_READ,"Button",BS_AUTORADIOBUTTON | WS_GROUP,224,28,35,10
+    CONTROL         "WRITE",IDC_RADIO_WRITE,"Button",BS_AUTORADIOBUTTON,223,46,36,10
+    COMBOBOX        IDC_MODULE,13,28,48,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ADDRESS,13,46,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DATA,13,64,48,14,ES_AUTOHSCROLL
+    LTEXT           "选择器件名",IDC_STATIC,117,30,41,8
+    LTEXT           "器件地址（不填为读/写全部，十六进制）",IDC_STATIC,62,47,152,11
+    LTEXT           "数据（十六进制）",IDC_STATIC,62,67,65,8
+    CONTROL         "DE",IDC_MODULE_DE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,62,29,26,10
+    CONTROL         "DS",IDC_MODULE_DS,"Button",BS_AUTORADIOBUTTON,88,29,26,10
+    LTEXT           "读入整个数据，请将数据和地址信息清空！",IDC_STATIC,14,83,161,8
+END
+
+IDD_DIALOG_EEPROM DIALOG 0, 0, 270, 197
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "EEPROM"
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDC_MSCOMM_EEPROM,
+                    "{648A5600-2C6E-101B-82B6-000000000014}",NOT WS_VISIBLE | WS_TABSTOP,251,0,19,19
+    EDITTEXT        IDC_EDIT1,10,105,251,81,ES_MULTILINE | ES_NUMBER | WS_VSCROLL
+    GROUPBOX        "数据接收区",IDC_STATIC,4,94,262,97
+    GROUPBOX        "命令发送区",IDC_STATIC,5,12,260,76
+    CONTROL         "ASCII",IDC_ASCII,"Button",BS_AUTORADIOBUTTON | WS_GROUP,64,1,33,10
+    CONTROL         "HEX",IDC_HEX,"Button",BS_AUTORADIOBUTTON,108,1,30,10
+    LTEXT           "显示方式",IDC_STATIC,20,1,33,8
+    PUSHBUTTON      "清空接收区",IDC_CLEAR_RECEIVED,149,1,45,10,BS_FLAT
+    PUSHBUTTON      "清空命令区",IDC_CLEAR_SEND,205,1,46,11,BS_FLAT
+    PUSHBUTTON      "发送",IDC_SEND,53,74,46,11,BS_FLAT
+    EDITTEXT        IDC_ADDRESS_TEXT,10,23,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DATA_TEXT,10,42,40,14,ES_AUTOHSCROLL
+    CONTROL         "读取",IDC_EEPROM_READ,"Button",BS_AUTORADIOBUTTON | WS_GROUP,10,61,32,10
+    CONTROL         "写入",IDC_EEPROM_WRITE,"Button",BS_AUTORADIOBUTTON,10,76,32,10
+    LTEXT           "器件地址（读/写全部时不需要填写，十六进制）",IDC_STATIC,53,26,171,8
+    LTEXT           "数据（十六进制）",IDC_STATIC,53,45,65,8
+    LTEXT           "读入整个数据，请将数据和地址信息清空！",IDC_STATIC,53,62,161,8
+    PUSHBUTTON      "读取8574A",IDC_BUTTON_READ_8574,142,71,50,14
+    PUSHBUTTON      "设置8574A",IDC_BUTTON_WRITE_8575,201,70,50,14
+END
+
+IDD_DIALOG_RELAY DIALOG 0, 0, 120, 51
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "运行中"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,54,0,43,12,ES_MULTILINE | ES_NUMBER | NOT WS_VISIBLE | WS_VSCROLL
+    CONTROL         "ASCII",IDC_ASCII,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_GROUP,0,0,33,10
+    CONTROL         "HEX",IDC_HEX,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,0,0,30,10
+    LTEXT           "显示方式",IDC_STATIC,0,0,33,8,NOT WS_VISIBLE
+    PUSHBUTTON      "清空接收区",IDC_CLEAR_RECEIVED,0,0,45,10,BS_FLAT | NOT WS_VISIBLE
+    PUSHBUTTON      "清空命令区",IDC_CLEAR_SEND,0,0,46,11,BS_FLAT | NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "发送",IDC_SEND,0,0,46,11,BS_FLAT | NOT WS_VISIBLE
+    LTEXT           "继电器选择",IDC_STATIC,0,0,41,8,NOT WS_VISIBLE
+    CONTROL         "合上",IDC_RELAY_ON,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_GROUP,0,0,32,10
+    CONTROL         "断开",IDC_RELAY_OFF,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,0,0,32,10
+    PUSHBUTTON      "读取AD值",IDC_BUTTON_READ_AD,0,0,46,11,BS_FLAT | NOT WS_VISIBLE
+    PUSHBUTTON      "K1",IDC_BUTTON1,0,0,30,14,NOT WS_VISIBLE
+    PUSHBUTTON      "K1演示",IDC_BUTTON2,0,0,30,14,NOT WS_VISIBLE
+    PUSHBUTTON      "K2",IDC_BUTTON3,0,0,30,14,NOT WS_VISIBLE
+    PUSHBUTTON      "K2演示",IDC_BUTTON4,0,0,30,14,NOT WS_VISIBLE
+    PUSHBUTTON      "K3",IDC_BUTTON5,0,0,30,14,NOT WS_VISIBLE
+    PUSHBUTTON      "K3演示",IDC_BUTTON6,0,0,30,14,NOT WS_VISIBLE
+    PUSHBUTTON      "K4",IDC_BUTTON7,0,0,30,14,NOT WS_VISIBLE
+    PUSHBUTTON      "K4演示",IDC_BUTTON8,0,0,30,14,NOT WS_VISIBLE
+    PUSHBUTTON      "K5",IDC_BUTTON9,0,0,30,14,NOT WS_VISIBLE
+    PUSHBUTTON      "K5演示",IDC_BUTTON10,0,0,30,14,NOT WS_VISIBLE
+    PUSHBUTTON      "K6",IDC_BUTTON11,0,0,30,14,NOT WS_VISIBLE
+    PUSHBUTTON      "K6演示",IDC_BUTTON12,0,0,30,14,NOT WS_VISIBLE
+    PUSHBUTTON      "K7",IDC_BUTTON13,0,0,30,14,NOT WS_VISIBLE
+    PUSHBUTTON      "K7演示",IDC_BUTTON14,0,0,30,14,NOT WS_VISIBLE
+    COMBOBOX        IDC_RELAY_SEL,0,0,48,30,CBS_DROPDOWN | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "退出演示",IDC_BUTTON15,9,16,100,26
+    CONTROL         "",IDC_MSCOMM_RELAY,
+                    "{648A5600-2C6E-101B-82B6-000000000014}",NOT WS_VISIBLE | WS_TABSTOP,101,0,19,19
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "MyTest Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "MyTest"
+            VALUE "LegalCopyright", "版权所有 (C) 2006"
+            VALUE "OriginalFilename", "MyTest.EXE"
+            VALUE "ProductName", "MyTest 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MYTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_DIALOG_DALLAS, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 201
+    END
+
+    IDD_DIALOG_EEPROM, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_RELAY, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_DALLAS DLGINIT
+BEGIN
+    IDC_MSCOMM_DALLAS, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+IDD_DIALOG_EEPROM DLGINIT
+BEGIN
+    IDC_MSCOMM_EEPROM, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+IDD_DIALOG_RELAY DLGINIT
+BEGIN
+    IDC_MSCOMM_RELAY, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 程序初始化失败。请确认 OLE 库程序是正确的版本。"
+    IDS_ABOUTBOX            "关于 MyTest(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MyTest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

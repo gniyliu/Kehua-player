@@ -1,0 +1,42 @@
+// MyTest.odl : type library source for MyTest.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (MyTest.tlb).
+
+[ uuid(633E2850-DEF3-445A-91D7-0578C17D3414), version(1.0) ]
+library MyTest
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CMyTestDoc
+	
+	[ uuid(20D8C2DE-92A1-48C5-A305-F414B3C2EC34) ]
+	dispinterface IMyTest
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CMyTestDlgAutoProxy)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CMyTestDlgAutoProxy)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CMyTestDoc
+	
+	[ uuid(E558AC74-B803-4F71-8A5C-221687C0ECDF) ]
+	coclass MyTest
+	{
+		[default] dispinterface IMyTest;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};
