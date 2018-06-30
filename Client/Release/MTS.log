@@ -1,9 +1,49 @@
-﻿生成启动时间为 2018/6/24 星期日 下午 9:31:26。
-     1>项目“D:\github\Kehua-player\Client\MTS.vcxproj”在节点 2 上(clean 个目标)。
-     1>_PrepareForClean:
-         正在删除文件“Release\Kehua.lastbuildstate”。
-     1>已完成生成项目“D:\github\Kehua-player\Client\MTS.vcxproj”(clean 个目标)的操作。
+﻿生成启动时间为 2018/6/30 星期六 下午 2:42:44。
+     1>项目“D:\github\Kehua-player\Client\MTS.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Release\Kehua.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       Midl:
+         所有输出均为最新。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Release\MyTest.pch" /Fo".\Release\\" /Fd".\Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt RelayDlg.cpp
+         RelayDlg.cpp
+     1>RelayDlg.cpp(523): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>RelayDlg.cpp(530): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>RelayDlg.cpp(574): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>RelayDlg.cpp(581): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>RelayDlg.cpp(622): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>RelayDlg.cpp(629): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>RelayDlg.cpp(663): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>RelayDlg.cpp(693): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>RelayDlg.cpp(723): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>RelayDlg.cpp(753): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>RelayDlg.cpp(787): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>RelayDlg.cpp(820): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>RelayDlg.cpp(880): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>RelayDlg.cpp(887): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>RelayDlg.cpp(921): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>RelayDlg.cpp(950): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+       ResourceCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Kehua.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /ManifestFile:"Release\Kehua.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"D:\github\Kehua-player\Client\Kehua.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\github\Kehua-player\Client\Kehua.lib" /MACHINE:X86 Release\MyTest.res
+         .\Release\DallasDlg.obj
+         .\Release\DlgProxy.obj
+         .\Release\EepromDlg.obj
+         .\Release\mscomm.obj
+         .\Release\MyTest.obj
+         .\Release\MyTestDlg.obj
+         .\Release\RelayDlg.obj
+         .\Release\StdAfx.obj
+         MTS.vcxproj -> D:\github\Kehua-player\Client\Kehua.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"Kehua.exe;#1" /manifest Release\Kehua.exe.intermediate.manifest "C:\Program Files\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+       FinalizeBuildStatus:
+         正在删除文件“Release\Kehua.unsuccessfulbuild”。
+         正在对“Release\Kehua.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\github\Kehua-player\Client\MTS.vcxproj”(build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.06
+已用时间 00:00:05.00

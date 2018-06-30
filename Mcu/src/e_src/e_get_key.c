@@ -313,7 +313,7 @@ static U08 cixi_3_stat_backup=0x01, cixi_4_stat_backup=0x01;
 		if(cixi_1_stat_backup != cixi_1_stat)
 		{
 			cixi_1_stat_backup = cixi_1_stat;
-			if( (cixi_1_stat_backup & 0x3) == 0x02 )
+			if( (cixi_1_stat_backup & 0x3) == 0x01 )
 			{
 				SendKeyInfo(KID_K1);
 				KeyLedAllOff();
@@ -333,7 +333,7 @@ static U08 cixi_3_stat_backup=0x01, cixi_4_stat_backup=0x01;
 		if(cixi_3_stat_backup != cixi_3_stat)
 		{
 			cixi_3_stat_backup = cixi_3_stat;
-			if( (cixi_3_stat_backup & 0x3) == 0x02 )
+			if( (cixi_3_stat_backup & 0x3) == 0x01 )
 			{
 				SendKeyInfo(KID_K3);
 				KeyLedAllOff();
@@ -343,7 +343,7 @@ static U08 cixi_3_stat_backup=0x01, cixi_4_stat_backup=0x01;
 		if(cixi_4_stat_backup != cixi_4_stat)
 		{
 			cixi_4_stat_backup = cixi_4_stat;
-			if( (cixi_4_stat_backup & 0x3) == 0x02 )
+			if( (cixi_4_stat_backup & 0x3) == 0x01 )
 			{
 				SendKeyInfo(KID_K4);
 				KeyLedAllOff();

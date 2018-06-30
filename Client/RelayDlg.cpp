@@ -986,8 +986,8 @@ void CRelayDlg::OnTimer(UINT_PTR nIDEvent)
 		OnKey_3_Open();
 		break;
 	case ID_TIMER_KEY_5:
-		OnKey_5_Open();
-		OnKey_5_Open();
+		OnKey_Mp4_Open();
+		OnKey_Mp4_Open();
 		break;
 
 	case ID_TIMER_KEY_DEFAULT:

@@ -19,6 +19,6 @@
 @REM 
 
 
-"H:\Program Files\IAR Systems\Embedded Workbench 6.5\common\bin\cspybat" "H:\Program Files\IAR Systems\Embedded Workbench 6.5\stm8\bin\stm8proc.dll" "H:\Program Files\IAR Systems\Embedded Workbench 6.5\stm8\bin\stm8sim.dll"  %1 --plugin "H:\Program Files\IAR Systems\Embedded Workbench 6.5\stm8\bin\stm8bat.dll" --backend -B "-p" "H:\Program Files\IAR Systems\Embedded Workbench 6.5\stm8\config\ddf\iostm8s207mb.ddf" "-d" "sim" 
+"C:\Program Files\IAR Systems\Embedded Workbench 6.5\common\bin\cspybat" "C:\Program Files\IAR Systems\Embedded Workbench 6.5\stm8\bin\stm8proc.dll" "C:\Program Files\IAR Systems\Embedded Workbench 6.5\stm8\bin\stm8sim.dll"  %1 --plugin "C:\Program Files\IAR Systems\Embedded Workbench 6.5\stm8\bin\stm8bat.dll" --backend -B "-p" "C:\Program Files\IAR Systems\Embedded Workbench 6.5\stm8\config\ddf\iostm8s207mb.ddf" "-d" "sim" 
 
 
